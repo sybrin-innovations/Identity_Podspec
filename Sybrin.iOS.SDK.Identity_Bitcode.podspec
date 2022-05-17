@@ -1,11 +1,11 @@
 
 Pod::Spec.new do |s|
-  s.name              = "Sybrin.iOS.Identity"
+  s.name              = "Sybrin.iOS.SDK.Identity_Bitcode"
   s.version           = "1.12.10"
   s.authors           = { "Innovations" => "innovations@sybrin.com" }
   s.license           = { :type => 'Copyright', :text => 'Copyright © 2020 Sybrin Systems' }
   s.homepage          = "https://ai.sybrin.com/"
-  s.source            = { :git => "https://github.com/sybrin-innovations/Sybrin.iOS.SDK.Identity_Bitcode", :tag => s.version }
+  s.source            = { :git => "https://github.com/sybrin-innovations/Sybrin.iOS.SDK.Identity_Bitcode.git", :tag => s.version }
   s.summary           = "Sybrin Identity SDK, capture Green Book ID, ID Card or Passports"
   # s.documentation_url = ''
 
@@ -15,9 +15,10 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'Sybrin_iOS_Identity.framework'
   s.module_name       = 'sybrin_ios_identity'
+  #s.source_files = 'Sybrin_iOS_Identity.framework'
 
-s.dependency 'GoogleMLKit/BarcodeScanning','~> 2.1.0'
-s.dependency 'GoogleMLKit/FaceDetection','~> 2.1.0'
-s.dependency 'GoogleMLKit/TextRecognition','~> 2.1.0'
-s.dependency 'Sybrin.iOS.Common','~> 5.2.15'
+# s.dependency 'GoogleMLKit/BarcodeScanning','~> 2.1.0'
+# s.dependency 'GoogleMLKit/FaceDetection','~> 2.1.0'
+# s.dependency 'GoogleMLKit/TextRecognition','~> 2.1.0'
+#s.dependency 'Sybrin.iOS.Common','~> 5.2.15'
 end
